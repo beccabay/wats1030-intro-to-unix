@@ -14,26 +14,45 @@ and then clone it to your development environment.
 
 ### Navigating the Filesystem
 
-* Get an idea of where you are in the operating system. Use the `pwd` command to find your "path to working directory"--your current location in the filesystem of your devbox. *Paste the output of the `pwd` command here:*
-* Discover more about this filesystem. Use `ls` (the "list" command)to see what is in this directory. *What directories and files do you see when you run `ls`?*
-* You can use *options* to modify how a command runs. Try using `ls -alh` to see the contents of your current directory. *How are the results different when you use the `-alh` options?*
-* The `man` ("manual") command tells you more about how any given command works. (*WARNING:* CodeAnywhere does not support the man command. You can click the following link to complete this task: http://man.he.net/). Run `man` to see instructions about how to use `man`. Then use `man` to learn what the `a`, `l`, and `h` options mean when used with the `ls` command. *Write down what those options do?*
-* Commands can also take *arguments*, which are usually the names of files or locations that you want the command to work with. Try running `ls /` to see what files are in the *root* directory of the filesystem. *What files and directories do you see listed?*
-* A Unix filesystem has a few special shortcuts to refer to specific locations. `/` indicates the *root* of the filesystem, meaning the top-most directory in the filesystem hierarchy. Use the `cd` ("change directory") command to move to the root directory. (Hint: Use `man` to look up the `cd` command if you have any issues) *Then run `pwd` and paste the output here:*
-* Another special shortcut in Unix is the `~` location. This indicates the *user root* directory, meaning the top-most directory in the hierarchy that comes below your user account. Use `cd` to move to `~`. *Run `pwd` and paste the response here:*
-* Change directory into the `challenge_files` directory. Use `ls` to find only the files with a `.demo` pattern. *How many files do you find?*
-* Use the `cd` command to move "up" one directory. *Where are you in the filesystem now?*
-* Press the up arrow on your keyboard. *What just happened?*
-* Press the up arrow a few more times. *What do you see?*
-* Run the `history` command. *What do you see?*
+* Get an idea of where you are in the operating system. Use the `pwd` command to find your "path to working directory"--your current location in the filesystem of your devbox. *Paste the output of the `pwd` command here:/c/Users/Becca Bay/projects/wats1030-intro-to-unix
+
+* Discover more about this filesystem. Use `ls` (the "list" command)to see what is in this directory. *What directories and files do you see when you run `ls`? 
+challenge_files  nix_scavenger_hunt.md          README.md
+LICENSE          nix_scavenger_hunt_stretch.md  super_scavengers.md
+
+* You can use *options* to modify how a command runs. Try using `ls -alh` to see the contents of your current directory. *How are the results different when you use the `-alh` options? The results are different in that it gives me way more information with the '-alh' options than with just the 'ls' command. 
+
+* The `man` ("manual") command tells you more about how any given command works. (*WARNING:* CodeAnywhere does not support the man command. You can click the following link to complete this task: http://man.he.net/). Run `man` to see instructions about how to use `man`. Then use `man` to learn what the `a`, `l`, and `h` options mean when used with the `ls` command. *Write down what those options do? The 'a' option means 'all' (do not ignore entries starting with). The 'l' option means use a long listing format. The 'h' option means 'human readable' (with -l and/or -s, print human readable sizes e.g., 1k 234M 2G).
+
+* Commands can also take *arguments*, which are usually the names of files or locations that you want the command to work with. Try running `ls /` to see what files are in the *root* directory of the filesystem. *What files and directories do you see listed?
+bin  dev  git-bash.exe  LICENSE.txt  proc               tmp           unins000.exe  usr
+cmd  etc  git-cmd.exe   mingw64      ReleaseNotes.html  unins000.dat  unins000.msg cd /
+
+* A Unix filesystem has a few special shortcuts to refer to specific locations. `/` indicates the *root* of the filesystem, meaning the top-most directory in the filesystem hierarchy. Use the `cd` ("change directory") command to move to the root directory. (Hint: Use `man` to look up the `cd` command if you have any issues) *Then run `pwd` and paste the output here: /
+
+* Another special shortcut in Unix is the `~` location. This indicates the *user root* directory, meaning the top-most directory in the hierarchy that comes below your user account. Use `cd` to move to `~`. *Run `pwd` and paste the response here: /c/Users/Becca Bay
+
+* Change directory into the `challenge_files` directory. Use `ls` to find only the files with a `.demo` pattern. *How many files do you find? 1 file
+
+* Use the `cd` command to move "up" one directory. *Where are you in the filesystem now? I' in the user root directory
+
+* Press the up arrow on your keyboard. *What just happened 'cd' was typed
+* Press the up arrow a few more times. *What do you see? 'ls .demo' was typed
+* Run the `history` command. *What do you see? I see all the commands I have done.
 
 ### Observing the System
 
-* Discover what account you are logged into using the `whoami` command. *What username are you currently using?*
-* Discover who else is on your system with the `who` command. *Are any other users using your system? If so, list them here:*
-* How long has your system been running? Use `uptime` to see, and *paste the result here:*
-* Run `ps aux` and review the results. (Hint: Use `man` to learn more about the `ps` command and options.) *How do you interpret what you see here?*
-* Run `top` and review the results. (Hint: You may need to use `ctrl-c` to get out of this app.) *How do you interpret what you see here?*
+* Discover what account you are logged into using the `whoami` command. *What username are you currently using? Becca Bay
+
+* Discover who else is on your system with the `who` command. *Are any other users using your system? If so, list them here: There are no oher users
+
+* How long has your system been running? Use `uptime` to see, and *paste the result here: bash: uptime: command not found
+
+* Run `ps aux` and review the results. (Hint: Use `man` to learn more about the `ps` command and options.) *How do you interpret what you see here? I'm not sure how to interperet the info.
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+      237       1     237       9836  cons0     197609 09:09:30 /usr/bin/bash
+      334     237     334      10540  cons0     197609 13:03:58 /usr/bin/ps
+* Run `top` and review the results. (Hint: You may need to use `ctrl-c` to get out of this app.) *How do you interpret what you see here? My computer says 'command not found'
 
 ### Finding and Viewing Files
 
